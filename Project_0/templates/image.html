@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Search</title>
+<style>
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+</style>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <style>
+        .button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+    <style>
+        .blank{
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+    <style>
+        .colum{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<div class="top-right">
+    <a href="http://127.0.0.1:8000/index/">搜索</a>
+</div>
+<div class="colum">
+    <form action="https://www.google.com/search" method="get">
+        <label class="center">
+            <input class="blank" type="text" name="q">
+        </label>
+        <input type="hidden" name="tbm" value="isch">
+        <label class="center">
+            <button class="button" type="submit">搜索图片</button>
+        </label>
+    </form>
+</div>
+</body>
+</html>

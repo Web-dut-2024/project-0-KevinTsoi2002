@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Search</title>
+    <style>
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+</style>
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <style>
+        .button{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 20px;
+        }
+    </style>
+    <style>
+        .blank{
+            width: 300px;
+            height: 20px;
+        }
+    </style>
+    <style>
+        .colum{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <style>
+        .left{
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            align-items: center;    
+        }
+    </style>
+</head>
+<body>
+<div class="top-right">
+    <a href="http://127.0.0.1:8000/index/">搜索</a>
+</div>
+<div class="colum">
+     <form id="search-form" action="https://www.google.com/search" method="get">
+        <label class="left" for="search-term">含有以下所有字词  ：
+            <input class="blank" id="search-term" type="text" name="as_q">
+        </label>
+         <label class="left" for="search-term">含有以下任意字词  ：  
+            <input class="blank" id="search-term" type="text" name="as_oq">
+         </label>
+         <label class="left" for="search-term">不含以下任意字词  ：
+            <input class="blank" id="search-term" type="text" name="as_eq">
+         </label>
+        <input id="search-term" type="hidden" name="as_epq" value="">
+         <input id="search-term" type="hidden" name="as_nlo" value="">
+         <input id="search-term" type="hidden" name="as_nhi" value="">
+         <input id="search-term" type="hidden" name="lr" value="">
+         <input id="search-term" type="hidden" name="cr" value="">
+         <input id="search-term" type="hidden" name="as_qdr" value="all">
+         <input id="search-term" type="hidden" name="as_sitesearch" value="">
+         <input id="search-term" type="hidden" name="as_occt" value="any">
+         <input id="search-term" type="hidden" name="filetype" value="">
+         <input id="search-term" type="hidden" name="tbs" value="">
+         <label class="center">
+             <input class="button" type="submit" value="高级搜索">
+         </label>
+    </form>
+</div>
+</body>
+</html>
